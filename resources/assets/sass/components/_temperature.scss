@@ -1,0 +1,54 @@
+.temperature__title {
+    color: color($blue, light);
+    opacity: 1;
+
+    font-size: setting($font-size, m);
+    text-transform: uppercase;
+}
+
+.temperature__current {
+    @include font-sans-light;
+
+    font-size: setting($font-size, l);
+    letter-spacing: .05em;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.temperature__stat {
+    @include clearfix;
+}
+
+.temperature__type {
+    @include font-sans;
+
+    top: .1em;
+    float: left;
+
+    opacity: .5;
+
+    font-size: setting($font-size, s);
+    text-transform: uppercase;
+}
+
+.temperature__value {
+    @include font-sans-black;
+
+    float: right;
+    vertical-align: top;
+
+    color: color($yellow);
+}
+
+.temperature__nominal {
+    color: color($green);
+}
+
+.temperature__cold {
+    color: color($blue);
+}
+
+.temperature__hot {
+    color: color($red);
+}

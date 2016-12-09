@@ -19,6 +19,7 @@ class Kernel extends ConsoleKernel
         \App\Components\Packagist\FetchTotals::class,
         \App\Components\InternetConnectionStatus\SendHeartbeat::class,
         \App\Components\RainForecast\FetchRainForecast::class,
+        \App\Components\Temperature\FetchTemperature::class,
     ];
 
     /**
@@ -34,5 +35,6 @@ class Kernel extends ConsoleKernel
         $schedule->command('dashboard:heartbeat')->everyMinute();
         $schedule->command('dashboard:packagist')->hourly();
         $schedule->command('dashboard:rain')->everyMinute();
+        $schedule->command('dashboard:temperature')->everyMinute();
     }
 }

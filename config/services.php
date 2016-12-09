@@ -35,4 +35,9 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    'temperature' => [
+        'endpoint' => env('TEMPERATURE_ENDPOINT'),
+        'secret' => env('TEMPERATURE_SECRET'),
+    ],
+
 ];

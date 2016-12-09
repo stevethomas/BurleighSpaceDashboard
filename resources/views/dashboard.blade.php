@@ -20,7 +20,8 @@
             <github-file file-name="freek" grid="a3"></github-file>
             <github-file file-name="rogier" grid="b3"></github-file>
             <github-file file-name="seb" grid="c3"></github-file>
-            <github-file file-name="willem" grid="d3"></github-file>
+            <temperature grid="d3"></temperature>
+
     </div>
 
 @endsection
