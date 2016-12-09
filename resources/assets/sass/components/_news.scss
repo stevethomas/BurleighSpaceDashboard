@@ -13,10 +13,10 @@
 
 
 .news__tag {
-    color: color($gray, 'darker');
+    color: color($gray, 'lighter');
     opacity: .75;
     font-size: setting($font-size, xxs);
-    background: color($orange, 'lightest');
+    font-style: italic;
     padding: .15em;
     margin-right: .5em;
 }
