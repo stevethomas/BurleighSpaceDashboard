@@ -1,13 +1,13 @@
 <template>
     <grid :position="grid" modifiers="overflow padded">
-        <section class="temperature2">
-            <h1 class="temperature__title">Outside</h1>
-            <h2 class="temperature__current">{{ current.temperature }}&deg;</h2>
+        <section class="weather">
+            <h1 class="weather__title">Outside</h1>
+            <h2 class="weather__current">{{ current.temperature }}&deg;</h2>
 
             <ul>
-                <li class="temperature__stat" v-for="forecast in forecasts">
-                    <h2 class="temperature__type">{{ forecast.day }}</h2>
-                    <span class="temperature__value">{{ forecast.max }}&deg;</span>
+                <li class="weather__stat" v-for="forecast in forecasts">
+                    <h2 class="weather__type">{{ forecast.day }}</h2>
+                    <span class="weather__value">{{ forecast.max }}&deg;</span>
                 </li>
             </ul>
         </section>
@@ -22,7 +22,7 @@
     export default {
 
         components: {
-            Grid,
+            Grid
         },
 
         mixins: [echo, saveState],
@@ -37,7 +37,7 @@
                     "windDirection": '',
                     "rain": ''
                 },
-                forecasts: [],
+                forecasts: []
             };
         },
 
@@ -45,9 +45,7 @@
             getEventHandlers() {
                 return {
                     'Weather.WeatherFetched': response => {
-                        console.log(response);
-
-                        this.current = response.weather.current;
+                         this.current = response.weather.current;
                         this.forecasts = response.weather.forecasts;
                     },
                 };
@@ -55,9 +53,9 @@
 
             getSaveStateConfig() {
                 return {
-                    cacheKey: 'outside',
+                    cacheKey: 'outside'
                 };
-            },
-        },
+            }
+        }
     };
 </script>

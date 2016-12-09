@@ -11,6 +11,8 @@
 
         <last-fm grid="b1:c1"></last-fm>
 
+        <news grid="b2:c3"></news>
+
         <current-time grid="d1" dateformat="ddd DD/MM"></current-time>
 
         <outside grid="d2"></outside>

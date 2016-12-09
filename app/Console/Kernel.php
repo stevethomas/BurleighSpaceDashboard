@@ -16,6 +16,7 @@ class Kernel extends ConsoleKernel
         \App\Components\GoogleCalendar\FetchGoogleCalendarEvents::class,
         \App\Components\LastFm\FetchCurrentTrack::class,
         \App\Components\InternetConnectionStatus\SendHeartbeat::class,
+        \App\Components\News\FetchNews::class,
         \App\Components\Temperature\FetchInsideTemperature::class,
         \App\Components\Weather\FetchWeather::class,
     ];
@@ -32,5 +33,6 @@ class Kernel extends ConsoleKernel
         $schedule->command('dashboard:heartbeat')->everyMinute();
         $schedule->command('dashboard:inside')->everyMinute();
         $schedule->command('dashboard:outside')->everyThirtyMinutes();
+        $schedule->command('dashboard:news')->everyFiveMinutes();
     }
 }

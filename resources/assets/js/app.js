@@ -7,6 +7,7 @@ import CurrentTime from './components/CurrentTime';
 import GoogleCalendar from './components/GoogleCalendar';
 import InternetConnection from './components/InternetConnection';
 import LastFm from './components/LastFm';
+import News from './components/News';
 import Inside from './components/Inside';
 import Outside from './components/Outside';
 
@@ -19,6 +20,7 @@ new Vue({
         GoogleCalendar,
         InternetConnection,
         LastFm,
+        News,
         Inside,
         Outside,
     },
