@@ -2,20 +2,18 @@
 
 namespace App\Components\Temperature;
 
-use App\Events\RainForecast\ForecastFetched;
-use App\Events\Temperature\TemperatureFetched;
-use Carbon\Carbon;
 use GuzzleHttp\Client;
 use Illuminate\Console\Command;
+use App\Events\Temperature\TemperatureFetched;
 
-class FetchTemperature extends Command
+class FetchInsideTemperature extends Command
 {
     /**
      * The console command name.
      *
      * @var string
      */
-    protected $signature = 'dashboard:temperature';
+    protected $signature = 'dashboard:inside';
 
     /**
      * The console command description.

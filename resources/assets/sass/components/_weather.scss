@@ -1,10 +1,10 @@
-.temperature__title {
+.weather__title {
     opacity: 1;
     font-size: setting($font-size, m);
     text-transform: uppercase;
 }
 
-.temperature__current {
+.weather__current {
     @include font-sans-light;
 
     font-size: setting($font-size, l);
@@ -14,11 +14,11 @@
     margin-bottom: 1em;
 }
 
-.temperature__stat {
+.weather__stat {
     @include clearfix;
 }
 
-.temperature__type {
+.weather__type {
     @include font-sans;
 
     top: .1em;
@@ -30,7 +30,7 @@
     text-transform: uppercase;
 }
 
-.temperature__value {
+.weather__value {
     @include font-sans-black;
 
     float: right;
@@ -39,14 +39,14 @@
     color: color($yellow);
 }
 
-.temperature__nominal {
+.weather__nominal {
     color: color($green);
 }
 
-.temperature__cold {
+.weather__cold {
     color: color($blue);
 }
 
-.temperature__hot {
-    color: color($red, 'light');
+.weather__hot {
+    color: color($red);
 }

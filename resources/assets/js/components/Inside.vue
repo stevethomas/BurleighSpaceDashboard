@@ -7,15 +7,15 @@
             <ul>
                 <li class="temperature__stat">
                     <h2 class="temperature__type">Average</h2>
-                    <span class="temperature__value">{{ average }}</span>
+                    <span class="temperature__value">{{ average }}&deg;</span>
                 </li>
                 <li class="temperature__stat">
                     <h2 class="temperature__type">Min</h2>
-                    <span class="temperature__value">{{ lowest }}</span>
+                    <span class="temperature__value">{{ lowest }}&deg;</span>
                 </li>
                 <li class="temperature__stat">
                     <h2 class="temperature__type">Max</h2>
-                    <span class="temperature__value">{{ highest }}</span>
+                    <span class="temperature__value">{{ highest }}&deg;</span>
                 </li>
             </ul>
         </section>
@@ -78,7 +78,7 @@
 
             getSaveStateConfig() {
                 return {
-                    cacheKey: 'temperature',
+                    cacheKey: 'inside',
                 };
             },
         },
