@@ -38,7 +38,7 @@ class FetchNews extends Command
         foreach ($stories as $story) {
             $news[] = [
                 'title' => (string)$story->title,
-                'tags' => array_slice((array)$story->category, 0, 2),
+                'tags' => array_slice((array)$story->category, 0, 1),
             ];
         }
 
