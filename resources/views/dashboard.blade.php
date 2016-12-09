@@ -5,23 +5,15 @@
     @javascript(compact('pusherKey'))
 
     <div class="dashboard" id="dashboard">
-            <google-calendar grid="a1:a2"></google-calendar>
+        <internet-connection grid="a3"></internet-connection>
 
-            <last-fm grid="b1:c1"></last-fm>
+        <google-calendar grid="a1:a2"></google-calendar>
 
-            <current-time grid="d1" dateformat="ddd DD/MM"></current-time>
+        <last-fm grid="b1:c1"></last-fm>
 
-            <packagist-statistics grid="b2"></packagist-statistics>
+        <current-time grid="d1" dateformat="ddd DD/MM"></current-time>
 
-            <rain-forecast grid="c2"></rain-forecast>
-
-            <internet-connection grid="d2"></internet-connection>
-
-            <github-file file-name="freek" grid="a3"></github-file>
-            <github-file file-name="rogier" grid="b3"></github-file>
-            <github-file file-name="seb" grid="c3"></github-file>
-            <temperature grid="d3"></temperature>
-
+        <temperature grid="d3"></temperature>
     </div>
 
 @endsection
