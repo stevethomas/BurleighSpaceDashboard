@@ -12,11 +12,13 @@ This repo contains the source code of https://dashboard.spatie.be
 - https://murze.be/2016/05/how-to-setup-and-use-the-google-calendar-api/
 - Create a new Service Account Key credential for google-api, JSON
 - Copy JSON file to storage/app/laravel-google-calendar/client_secret.json
+- Retrieve calendar ID from Calendar Details tab at https://calendar.google.com
 
 ### Last.fm
 - https://secure.last.fm/api/authentication
 - add API key to .env
 - open spotify setup last.fm in settings
+- (note last.fm auth does not seem to be required)
 
 ## Example
 
