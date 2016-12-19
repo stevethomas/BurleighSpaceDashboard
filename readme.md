@@ -2,6 +2,22 @@
 
 This repo contains the source code of https://dashboard.spatie.be
 
+## Setup Notes
+- Ref: https://murze.be/2016/06/building-dashboard-using-laravel-vue/
+- Run bash bin/setup.sh
+- Add credentials for Pusher
+
+### Calendar
+- https://console.developers.google.com/apis/
+- https://murze.be/2016/05/how-to-setup-and-use-the-google-calendar-api/
+- Create a new Service Account Key credential for google-api, JSON
+- Copy JSON file to storage/app/laravel-google-calendar/client_secret.json
+
+### Last.fm
+- https://secure.last.fm/api/authentication
+- add API key to .env
+- open spotify setup last.fm in settings
+
 ## Example
 
 <img style="max-width:100%; height: auto" src="http://spatie.github.io/dashboard.spatie.be/images/screenshot.png">
