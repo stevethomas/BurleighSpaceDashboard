@@ -1,2 +1,0 @@
-# artisan
-* * * * *       pi php /home/pi/BurleighSpaceDashboard/artisan schedule:run >> /dev/null 2>&1
