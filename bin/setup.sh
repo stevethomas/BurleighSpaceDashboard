@@ -4,10 +4,16 @@
 # Helper script to run after initial git clone on dev machine #
 ###############################################################
 
+echo "Setting up packages..."
 composer install
 php artisan key:generate
 npm install
 gulp
+
+echo "Setting up local DB"
+touch database/database.sqlite
+php artisan migrate
+php artisan db:seed
 
 # configure launch agent / cron job
 if [[ "$OSTYPE" == "darwin"* ]]; then
