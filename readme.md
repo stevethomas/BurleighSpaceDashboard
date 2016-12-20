@@ -33,6 +33,7 @@ Project forked from [spatie](https://github.com/spatie/dashboard.spatie.be). Awe
 disable_overscan=1
 ````
 - Update ~/.config/lxsession/LXDE-pi/autostart as per bin/autostart
+- in GUI > Preferences > Screensaver, disable screen saver 
 
 ## Components
 
