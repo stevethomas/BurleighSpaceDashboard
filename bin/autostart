@@ -1,0 +1,11 @@
+# place in: /home/pi/.config/lxsession/LXDE-pi/autostart
+@lxpanel --profile LXDE-pi
+@pcmanfm --desktop --profile LXDE-pi
+@point-rpi
+
+# launch to chromium kiosk mode URL
+#@xscreensaver -no-splash
+@xset s off # don't activate screensaver
+@xset s noblank # don't blank the video device
+@xset -dpms # disable DPMS (Energy Star) features.
+@chromium-browser --noerrdialogs --disable-infobars --disable-session-crashed-bubble --kiosk https://dashboard.burleighspace.com.au
