@@ -26,7 +26,7 @@ Project forked from [spatie](https://github.com/spatie/dashboard.spatie.be). Awe
 - Add device API endpoint in .env
 - Add user API key in .env
 
-### TV
+### Raspberry Pi
 - Edit /boot/config.txt add:
 ````
 # uncomment disable_overscan=1
