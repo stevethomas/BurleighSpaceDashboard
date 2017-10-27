@@ -9,7 +9,7 @@
 
         <google-calendar grid="a2:a3"></google-calendar>
 
-        <last-fm grid="b1:c1"></last-fm>
+        <burleigh-space grid="b1:c1"></burleigh-space>
 
         <news grid="b2:c3"></news>
 

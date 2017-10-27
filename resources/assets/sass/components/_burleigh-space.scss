@@ -1,0 +1,28 @@
+
+.burleigh-space {
+    height: 100%;
+    z-index: 1;
+}
+
+.burleigh-space__background {
+    height: 100%;
+    //animation: ken-burns 30s alternate infinite ease-in-out; // -> use only with a decent graphic card
+
+    background-position: center;
+    background-image: url('/logo-500.png');
+    background-repeat: no-repeat;
+
+    @at-root {
+        @keyframes ken-burns {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.25);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    }
+}

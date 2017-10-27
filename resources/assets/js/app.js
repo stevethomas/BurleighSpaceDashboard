@@ -6,7 +6,8 @@ import Vue from 'vue';
 import CurrentTime from './components/CurrentTime';
 import GoogleCalendar from './components/GoogleCalendar';
 import InternetConnection from './components/InternetConnection';
-import LastFm from './components/LastFm';
+// import LastFm from './components/LastFm';
+import BurleighSpace from './components/BurleighSpace';
 import News from './components/News';
 import Inside from './components/Inside';
 import Outside from './components/Outside';
@@ -19,7 +20,8 @@ new Vue({
         CurrentTime,
         GoogleCalendar,
         InternetConnection,
-        LastFm,
+        // LastFm,
+        BurleighSpace,
         News,
         Inside,
         Outside,
