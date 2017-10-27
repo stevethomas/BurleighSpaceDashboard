@@ -30,9 +30,13 @@ return [
     ],
 
     'stripe' => [
-        'model' => App\User::class,
+        'model' => App\Models\User::class,
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
+    ],
+
+    'meetings' => [
+        'endpoint' => env('MEETINGS_ENDPOINT'),
     ],
 
     'temperature' => [

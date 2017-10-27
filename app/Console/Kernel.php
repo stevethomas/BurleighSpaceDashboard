@@ -14,11 +14,12 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         \App\Components\GoogleCalendar\FetchGoogleCalendarEvents::class,
-        \App\Components\LastFm\FetchCurrentTrack::class,
+//        \App\Components\LastFm\FetchCurrentTrack::class,
         \App\Components\InternetConnectionStatus\SendHeartbeat::class,
         \App\Components\News\FetchNews::class,
         \App\Components\Temperature\FetchInsideTemperature::class,
         \App\Components\Weather\FetchWeather::class,
+        \App\Components\BurleighSpace\FetchBurleighSpaceMeetings::class,
     ];
 
     /**
@@ -28,11 +29,12 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('dashboard:lastfm')->everyMinute();
+//        $schedule->command('dashboard:lastfm')->everyMinute();
         $schedule->command('dashboard:calendar')->everyFiveMinutes();
         $schedule->command('dashboard:heartbeat')->everyMinute();
         $schedule->command('dashboard:inside')->everyMinute();
         $schedule->command('dashboard:outside')->everyThirtyMinutes();
         $schedule->command('dashboard:news')->everyFiveMinutes();
+        $schedule->command('dashboard:meetings')->everyFiveMinutes();
     }
 }

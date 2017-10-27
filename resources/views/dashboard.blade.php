@@ -7,7 +7,9 @@
     <div class="dashboard" id="dashboard">
         <internet-connection grid="a1"></internet-connection>
 
-        <google-calendar grid="a2:a3"></google-calendar>
+        <meetings grid="a2"></meetings>
+
+        <google-calendar grid="a3"></google-calendar>
 
         <burleigh-space grid="b1:c1"></burleigh-space>
 

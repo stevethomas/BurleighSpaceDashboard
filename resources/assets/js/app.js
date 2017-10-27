@@ -8,6 +8,7 @@ import GoogleCalendar from './components/GoogleCalendar';
 import InternetConnection from './components/InternetConnection';
 // import LastFm from './components/LastFm';
 import BurleighSpace from './components/BurleighSpace';
+import Meetings from './components/Meetings';
 import News from './components/News';
 import Inside from './components/Inside';
 import Outside from './components/Outside';
@@ -22,6 +23,7 @@ new Vue({
         InternetConnection,
         // LastFm,
         BurleighSpace,
+        Meetings,
         News,
         Inside,
         Outside,

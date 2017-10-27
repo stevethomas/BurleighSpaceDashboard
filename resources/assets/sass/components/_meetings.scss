@@ -1,0 +1,13 @@
+.meetings__meetings {
+    color: color($blue, light);
+
+    font-size: setting($font-size, s);
+}
+
+.meetings__meeting {
+    padding-bottom: 1.5vh;
+}
+
+.meetings__meeting__title {
+    @include font-sans-bold;
+}

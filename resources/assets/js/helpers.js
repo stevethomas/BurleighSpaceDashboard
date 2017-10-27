@@ -1,8 +1,8 @@
-import { upperFirst } from 'lodash';
+import {upperFirst} from 'lodash';
 import moment from 'moment';
 
 export function formatNumber(value) {
-    if (! value) {
+    if (!value) {
         return 0;
     }
 
@@ -10,7 +10,7 @@ export function formatNumber(value) {
 }
 
 export function addClassModifiers(base, modifiers = []) {
-    if (! Array.isArray(modifiers)) {
+    if (!Array.isArray(modifiers)) {
         modifiers = modifiers.split(' ');
     }
 
@@ -29,4 +29,8 @@ export function relativeDate(value) {
     }
 
     return upperFirst(date.fromNow());
+}
+
+export function timespan(starts, ends) {
+    return moment.utc(starts).local().format('ddd HH:mm') + ' - ' + moment.utc(ends).local().format('HH:mm');
 }

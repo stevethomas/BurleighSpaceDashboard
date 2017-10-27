@@ -400,6 +400,21 @@ li {
   }
 }
 
+.meetings__meetings {
+  color: #73c7de;
+  font-size: 0.9em;
+}
+
+.meetings__meeting {
+  padding-bottom: 1.5vh;
+}
+
+.meetings__meeting__title {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
 .news__title {
   opacity: 1;
   font-size: 1.1em;
