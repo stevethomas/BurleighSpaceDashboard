@@ -19,8 +19,9 @@
         setInterval(function() {
             // click #keepalive element every 5 minutes to prevent Pi sleeping
             document.getElementById('keepalive').click();
-        }, 300);
+//            console.log('bump');
+        }, 300 * 1000);
     </script>
-    
+
 </body>
 </html>
