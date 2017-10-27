@@ -367,6 +367,7 @@ li {
   background-position: center;
   background-image: url("/logo-500.png");
   background-repeat: no-repeat;
+  background-size: 80%;
 }
 
 @-webkit-keyframes ken-burns {
